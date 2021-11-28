@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
 function User() {
     return (
-        <div className='home-section'>
-            <h1>user</h1>
+        <div className="profile-container">
+            <h1>User</h1>
         </div>
-    )
+    );
 }
-
-export default User
+export default User;
