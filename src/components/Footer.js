@@ -1,7 +1,10 @@
 import React from 'react'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
+  const notify = () => toast.error("Lorem ipsum dolor")
     return (
         <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0">
       <div style={{ backgroundColor: "#6351ce" }}>
@@ -51,7 +54,9 @@ function Footer() {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <a href="#!">MDBootstrap</a>
+              <a onClick={notify}>MDBootstrap</a>
+              
+              <ToastContainer />
             </p>
             <p>
               <a href="#!">MDWordPress</a>
