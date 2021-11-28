@@ -6,6 +6,8 @@ import User from './pages/User'
 import Favorites from './pages/Favorites'
 import Settings from './pages/Settings'
 import Information from './pages/Information'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp';
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                     <Route path='/favorites' element = {<Favorites/>}/>
                     <Route path='/settings' element = {<Settings/>}/>
                     <Route path='/information' element = {<Information/>}/>
+                    <Route path='/login' element = {<Login />}/>
+                    <Route path='/signup' element = {<SignUp />}/>
                 </Routes>
             </Router>
         </>
